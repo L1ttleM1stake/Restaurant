@@ -137,7 +137,7 @@ class OrderTableViewController: UITableViewController, AddToOrderDelegate {
         cell.textLabel?.text = menuItem.name
         
         // the right label displays the price along with currency symbol
-        cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
+        cell.detailTextLabel?.text = String(format: "₽%.2f", menuItem.price)
         
         // fetch the image from the server
         MenuController.shared.fetchImage(url: menuItem.imageURL) { image in
